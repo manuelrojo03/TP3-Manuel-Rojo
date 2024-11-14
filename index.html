@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="m-auto">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a  class="navbar-brand" href="index.html"><img width="100px" height="100px"  src="imagenes/Logo SISU Sin fondo.png" alt="SISU"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/sisu_arg_/">Instagram</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.x.com">X</a>
+              </li> 
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+      <header class="container-fluid w-75 ">
+    
+        <img class="img-fluid mx-auto d-block"  src="imagenes/Diseño sin título (3) 6.28.44 p. m..png" alt="sisu chanchito">
+ 
+   
+            <h1 class="col-md text-center mt-5">Aprendé, Ahorrá, Invertí Jugando</h1>
+
+  
+        <p class="text-center"> Con SISU vas a poder aprender de manera didáctica a getionar, ahorrar e invertir tu dinero</p>
+  
+      </header>
+
+    <main class="container-fluid w-75">
+      <div class="row justify-content-center align-items-center mt-5">
+    <div class="col-md-12 col-lg-4">
+<h3>Lecciones Interactivas</h3>
+<p class="text-justify">Aprende conceptos financieros a través de lecciones cortas, divertidas y gamificadas.</p>
+    </div>
+   
+    <div class="col-md-6 col-lg-2">
+        <h3>Simulaciones de Ahorro</h3>
+        <p class="text-justify">Practica tus habilidades de ahorro con simulaciones realistas y juegos interactivos.</p>
+
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+        <h3>Inversiones Virtuales</h3>
+        <p class="text-justify">Aprende a invertir sin riesgo con nuestro mercado de inversiones virtual y desafíos diarios.</p>
+
+    </div>
+
+
+</div>
+
+<div class="row justify-content-around align-items-center mt-5">
+    <div class="col-md-12 text-center">
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#miModal">
+            Conocé más sobre nuestra app
+            </button>
+          
+        <p class="text-center mt-2">Visita el Appstore o Playstore para conocer más</p>  
+    </div>
+
+    <div class="col-md-3"> 
+        <img class="img-fluid" src="imagenes/Captura de pantalla 2024-11-14 a la(s) 12.03.31 p. m..png" alt="captej">
+    </div>
+    
+    <div class="col-md-3"> 
+        <img class="img-fluid"  src="imagenes/Captura de pantalla 2024-11-14 a la(s) 12.03.45 p. m..png" alt="captacc">
+    </div>
+  
+</div>
+      </main>
+
+
+
+
+      <div class="modal fade" id="miModal" tabindex="-1" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+              <div class="modal-header"> <h1 class="modal-title">Conocé Más</h1></div>
+      
+            <div class="modal-body">
+
+       <form action="codigo.php" method="post" class="needs-validation" novalidate>
+         <div>
+       <label for="nombre" class="form-label">Nombre</label>
+       <input type="text" name="nombre" id="nombre" required class="form-control">
+        <div class="invalid-feedback">Falta el Nombre!</div>
+      </div>
+
+       <label for="mail" class="form-label">Mail</label>
+       <input type="email" name="mail" id="mail" class="form-control">
+
+       <button class="btn btn-success mt-3">Enviar</button>
+
+
+       </form>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+   </div>
+     
+
+</div>
+
+
+    
+      <script>
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+      
+</body>
+</html>
